@@ -9,11 +9,19 @@
 [![Status](https://img.shields.io/badge/Status-Production-28a745)](https://github.com/webify-cx/official)
 [![GitHub Stars](https://img.shields.io/github/stars/webify-cx/official?style=flat&logo=github&color=181717)](https://github.com/webify-cx/official)
 
-A fully-featured, modern marketing website built with **React 18**, **Vite**, and **Firebase**. Includes dark/light theme switching, progressive web app (PWA) capabilities, responsive design, and a contact form with Firestore integration.
+---
 
-**Live Demo**: [webify-cx.web.app](https://webify-cx.web.app)  
-**Repository**: [github.com/webify-cx/official](https://github.com/webify-cx/official)  
-**License**: [MIT License](LICENSE)
+## 🔗 Quick Links
+
+[![🚀 Live Demo](https://img.shields.io/badge/🚀_Live_Demo-webify--cx.web.app-1f6feb?style=for-the-badge&logo=google-chrome)](https://webify-cx.web.app)
+[![📂 GitHub Repo](https://img.shields.io/badge/📂_GitHub_Repo-webify--cx%2Fofficial-1f6feb?style=for-the-badge&logo=github)](https://github.com/webify-cx/official)
+[![🐛 Report Issues](https://img.shields.io/badge/🐛_Report_Issues-GitHub_Issues-1f6feb?style=for-the-badge&logo=github)](https://github.com/webify-cx/official/issues)
+[![💬 Discussions](https://img.shields.io/badge/💬_Discussions-Community-1f6feb?style=for-the-badge&logo=github)](https://github.com/webify-cx/official/discussions)
+[![📖 Documentation](https://img.shields.io/badge/📖_Documentation-Full_Guide-1f6feb?style=for-the-badge&logo=readme)](README.md)
+
+---
+
+A fully-featured, modern marketing website built with **React 18**, **Vite**, and **Firebase**. Includes dark/light theme switching, progressive web app (PWA) capabilities, responsive design, and a contact form with Firestore integration.
 
 ---
 
