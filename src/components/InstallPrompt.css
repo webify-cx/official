@@ -1,0 +1,263 @@
+/* ==================== INSTALL PROMPT STYLES ==================== */
+
+.install-prompt-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 10, 10, 0.8);
+  backdrop-filter: blur(4px);
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.install-prompt-dialog {
+  position: relative;
+  background: linear-gradient(135deg, #111111 0%, #161616 100%);
+  border: 1px solid rgba(0, 255, 150, 0.2);
+  border-radius: 16px;
+  padding: 40px 32px;
+  max-width: 440px;
+  width: 100%;
+  box-shadow: 0 0 40px rgba(0, 255, 150, 0.1), 0 0 60px rgba(255, 60, 120, 0.05);
+  animation: slideUp 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  overflow: hidden;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Close button */
+.install-prompt-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: transparent;
+  border: 1px solid rgba(0, 255, 150, 0.2);
+  color: var(--text-dim);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  transition: all 0.2s;
+}
+
+.install-prompt-close:hover {
+  background: rgba(0, 255, 150, 0.1);
+  color: var(--neon);
+  border-color: var(--neon);
+}
+
+/* Header */
+.install-prompt-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.install-prompt-icon {
+  font-size: 48px;
+  margin-bottom: 12px;
+  animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.install-prompt-header h2 {
+  font-size: 24px;
+  color: var(--text);
+  margin: 0;
+  background: linear-gradient(90deg, var(--neon), var(--hot));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 600;
+}
+
+/* Content */
+.install-prompt-content {
+  margin-bottom: 28px;
+}
+
+.install-prompt-content > p {
+  color: var(--text-dim);
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0 0 16px;
+  text-align: center;
+}
+
+.install-benefits {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.install-benefits li {
+  color: var(--text-mute);
+  font-size: 13px;
+  line-height: 1.5;
+  padding-left: 28px;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.install-benefits li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--neon);
+  box-shadow: 0 0 8px var(--neon);
+}
+
+.install-benefits li:hover {
+  color: var(--text-dim);
+}
+
+/* Actions */
+.install-prompt-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.install-btn-primary,
+.install-btn-secondary {
+  flex: 1;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-transform: uppercase;
+  font-family: 'Space Mono', monospace;
+}
+
+.install-btn-primary {
+  background: linear-gradient(135deg, var(--neon), #00dd7f);
+  color: var(--bg);
+  border: none;
+  box-shadow: 0 0 20px rgba(0, 255, 150, 0.3);
+}
+
+.install-btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 32px rgba(0, 255, 150, 0.5), 0 8px 16px rgba(0, 255, 150, 0.2);
+}
+
+.install-btn-primary:active {
+  transform: translateY(0);
+}
+
+.install-btn-secondary {
+  background: transparent;
+  color: var(--text-dim);
+  border: 1px solid rgba(0, 255, 150, 0.2);
+}
+
+.install-btn-secondary:hover {
+  background: rgba(0, 255, 150, 0.08);
+  color: var(--text);
+  border-color: rgba(0, 255, 150, 0.4);
+}
+
+/* Decorative glows */
+.install-prompt-glow-1 {
+  position: absolute;
+  top: -100px;
+  left: -100px;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(0, 255, 150, 0.15) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(40px);
+}
+
+.install-prompt-glow-2 {
+  position: absolute;
+  bottom: -80px;
+  right: -80px;
+  width: 160px;
+  height: 160px;
+  background: radial-gradient(circle, rgba(255, 60, 120, 0.1) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(40px);
+}
+
+/* Mobile responsive */
+@media (max-width: 640px) {
+  .install-prompt-dialog {
+    padding: 28px 20px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .install-prompt-header h2 {
+    font-size: 20px;
+  }
+
+  .install-prompt-icon {
+    font-size: 40px;
+  }
+
+  .install-prompt-content > p {
+    font-size: 13px;
+  }
+
+  .install-benefits li {
+    font-size: 12px;
+    padding-left: 24px;
+  }
+
+  .install-prompt-actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .install-btn-primary,
+  .install-btn-secondary {
+    padding: 14px 16px;
+    font-size: 12px;
+  }
+}

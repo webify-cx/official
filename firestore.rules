@@ -1,0 +1,14 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Allow anyone to read contact submissions (optional - change if needed)
+    match /contacts/{document=**} {
+      allow read: if true;
+      allow create: if request.resource.data.keys().hasAll(['name', 'email', 'message']);
+      allow update, delete: if false;
+    }
+
+    // Add more collection rules here as needed
+    // Example: match /users/{document=**} { ... }
+  }
+}

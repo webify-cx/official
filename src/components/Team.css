@@ -1,0 +1,107 @@
+#team { padding: 120px 40px; }
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--line);
+  margin-top: 64px;
+}
+
+.team-card {
+  background: var(--bg);
+  padding: 40px 32px;
+  position: relative;
+  overflow: hidden;
+  transition: background 0.3s;
+}
+.team-card:hover { background: var(--bg2); }
+.team-card:hover .team-avatar-border {
+  border-color: var(--neon);
+  box-shadow: var(--neon-glow);
+}
+
+.team-avatar-wrap {
+  margin-bottom: 24px;
+  position: relative;
+  display: inline-block;
+}
+
+.team-avatar-border {
+  width: 72px; height: 72px;
+  border: 1px solid var(--line-bright);
+  display: flex; align-items: center; justify-content: center;
+  transition: all 0.3s;
+  position: relative;
+}
+.team-avatar-border::before {
+  content: '';
+  position: absolute;
+  top: -4px; left: -4px;
+  right: -4px; bottom: -4px;
+  border: 1px solid rgba(0,255,150,0.05);
+}
+
+.team-initials {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 24px;
+  letter-spacing: 2px;
+  color: var(--neon);
+}
+
+.team-name {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 26px;
+  letter-spacing: 2px;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.team-role {
+  font-family: 'Space Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--neon);
+  margin-bottom: 16px;
+}
+
+.team-bio {
+  font-size: 13px;
+  color: var(--text-dim);
+  line-height: 1.7;
+}
+
+.team-skills {
+  display: flex; flex-wrap: wrap; gap: 6px;
+  margin-top: 20px;
+}
+.skill-tag {
+  padding: 3px 10px;
+  background: rgba(0,255,150,0.05);
+  border: 1px solid rgba(0,255,150,0.1);
+  font-family: 'Space Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 1px;
+  color: var(--text-mute);
+}
+
+/* ── TEAM RESPONSIVE ── */
+@media (max-width: 1100px) {
+  .team-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 900px) {
+  #team { padding: 72px 20px; }
+  .team-grid {
+    grid-template-columns: 1fr;
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 560px) {
+  .team-card { padding: 28px 20px; }
+  .team-name { font-size: 22px; }
+  .team-avatar-border { width: 60px; height: 60px; }
+  .team-initials { font-size: 20px; }
+}

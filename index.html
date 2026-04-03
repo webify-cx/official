@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Webify crafts digital experiences that hit hard and load fast. No templates, no fluff — just raw, purposeful code built to dominate your market." />
+    <meta name="keywords" content="web development, web design, custom websites, React development, full-stack development, Webify" />
+    <meta name="author" content="Webify" />
+    <meta name="theme-color" content="#0a0a0a" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://webify.cx/" />
+    <meta property="og:title" content="Webify — Making Websites Happen" />
+    <meta property="og:description" content="Webify crafts digital experiences that hit hard and load fast. No templates, no fluff — just raw, purposeful code built to dominate your market." />
+    <meta property="og:image" content="https://webify.cx/og-image.png" />
+
+    <!-- Twitter Card -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://webify.cx/" />
+    <meta property="twitter:title" content="Webify — Making Websites Happen" />
+    <meta property="twitter:description" content="Webify crafts digital experiences that hit hard and load fast. No templates, no fluff — just raw, purposeful code built to dominate your market." />
+    <meta property="twitter:image" content="https://webify.cx/og-image.png" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://webify.cx/" />
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="icon" type="image/x-icon" href="/public/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Webify" />
+
+    <!-- Fonts -->
+    <title>Webify — Making Websites Happen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+
+    <!-- PWA Service Worker Registration -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker
+            .register('/service-worker.js')
+            .then((registration) => {
+              console.log('Service Worker registered:', registration)
+            })
+            .catch((error) => {
+              console.error('Service Worker registration failed:', error)
+            })
+        })
+      }
+    </script>
+  </body>
+</html>
