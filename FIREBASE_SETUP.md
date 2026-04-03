@@ -14,12 +14,12 @@ Firebase credentials are stored in `src/utils/firebase.js`:
 
 ```javascript
 const firebaseConfig = {
-  apiKey: "AIzaSyAqN8qPEPBhQB9YKfpf5zY5nCgOmIxLZSI",
-  authDomain: "webify-cx.firebaseapp.com",
-  projectId: "webify-cx",
-  storageBucket: "webify-cx.firebasestorage.app",
-  messagingSenderId: "631944490014",
-  appId: "1:631944490014:web:ff95c0f4047f04ee86120f"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
 }
 ```
 
