@@ -710,7 +710,17 @@ Built with ❤️ by the Webify Team
 
 ---
 
-## 📊 Project Statistics
+## �‍💻 Connect With Us
+
+[![Website](https://img.shields.io/badge/🌐_Website-webify--cx.com-1f6feb?style=for-the-badge&logo=googlechrome)](https://webify-cx.com)
+[![GitHub](https://img.shields.io/badge/GitHub-webify--cx%2Fofficial-1f6feb?style=for-the-badge&logo=github)](https://github.com/webify-cx/official)
+[![Email](https://img.shields.io/badge/📧_Email-contact%40webify--cx.com-1f6feb?style=for-the-badge&logo=gmail)](mailto:contact@webify-cx.com)
+[![Twitter](https://img.shields.io/badge/Twitter-@webifycx-1f6feb?style=for-the-badge&logo=twitter)](https://twitter.com/webifycx)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-webify--cx-1f6feb?style=for-the-badge&logo=linkedin)](https://linkedin.com/company/webify-cx)
+
+---
+
+## �📊 Project Statistics
 
 | Metric | Value |
 |--------|-------|
