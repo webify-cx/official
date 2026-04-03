@@ -1,9 +1,19 @@
 # Webify - Modern React Marketing Website
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![React](https://img.shields.io/badge/React-18.3.1-61dafb?logo=react)](https://react.dev)
+[![Vite](https://img.shields.io/badge/Vite-8.0.3-646cff?logo=vite)](https://vitejs.dev)
+[![Firebase](https://img.shields.io/badge/Firebase-10.8.0-ffa500?logo=firebase)](https://firebase.google.com)
+[![Node](https://img.shields.io/badge/Node-v24.14.0+-339933?logo=node.js)](https://nodejs.org)
+[![PWA](https://img.shields.io/badge/PWA-Ready-4285f4?logo=pwa)](https://web.dev/progressive-web-apps/)
+[![Status](https://img.shields.io/badge/Status-Production-28a745)](https://github.com/webify-cx/official)
+[![GitHub Stars](https://img.shields.io/github/stars/webify-cx/official?style=flat&logo=github&color=181717)](https://github.com/webify-cx/official)
+
 A fully-featured, modern marketing website built with **React 18**, **Vite**, and **Firebase**. Includes dark/light theme switching, progressive web app (PWA) capabilities, responsive design, and a contact form with Firestore integration.
 
 **Live Demo**: [webify-cx.web.app](https://webify-cx.web.app)  
-**Repository**: [github.com/webify-cx/official](https://github.com/webify-cx/official)
+**Repository**: [github.com/webify-cx/official](https://github.com/webify-cx/official)  
+**License**: [MIT License](LICENSE)
 
 ---
 
